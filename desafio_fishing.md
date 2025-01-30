@@ -106,3 +106,51 @@ O ataque de phishing é uma ameaça muito comum e eficaz devido à sua capacidad
 
 Ao aprender sobre como os ataques de phishing funcionam e como prevenir e detectar tais ataques, você está tomando as medidas necessárias para se proteger e proteger os outros contra esse tipo de ameaça.
 
+🚨 **Como Funciona um Ataque de Phishing Usando o Kali Linux e o Social-Engineer Toolkit (SET)?** 🚨
+
+No mundo da **cibersegurança**, entender como funcionam os ataques de **phishing** é crucial para proteger sistemas e dados sensíveis. O phishing é uma técnica onde criminosos tentam enganar usuários para obter informações confidenciais, como **senhas**, **dados bancários** e **credenciais de login**. 
+
+Um dos métodos mais comuns de realizar ataques de phishing é o uso do **Social-Engineer Toolkit (SET)**, uma ferramenta poderosa disponível no **Kali Linux**, projetada para automatizar ataques de engenharia social.
+
+🔍 **Como Funciona o Ataque de Phishing Usando o SET?**
+
+1. **Configuração Inicial:**
+   No Kali Linux, você obtém permissões de superusuário para acessar as ferramentas necessárias:
+   ```bash
+   sudo su
+   ```
+   Isso garante que você tenha privilégios para realizar a configuração do ataque.
+
+2. **Iniciando o Social-Engineer Toolkit (SET):**
+   Com permissões de **root**, basta digitar:
+   ```bash
+   setoolkit
+   ```
+   Isso iniciará o SET e abrirá um menu interativo para selecionar o tipo de ataque.
+
+3. **Escolhendo o Vetor de Ataque:**
+   No SET, selecionamos a opção **"Social-Engineering Attacks"** e, em seguida, escolhemos **"Web Site Attack Vectors"**. O método específico que usaremos para phishing é o **"Credential Harvester Attack Method"**, que captura as credenciais inseridas pela vítima em um site clonado.
+
+4. **Clonando o Site de Phishing:**
+   A seguir, clonamos um site legítimo, como o **Facebook** (http://www.facebook.com), para criar um falso formulário de login onde as vítimas inserem suas credenciais.
+
+5. **Obtendo o IP da Máquina:**
+   Usamos o comando `ifconfig` para descobrir o **endereço IP** da nossa máquina, que será usado para configurar o servidor local onde o site falso será hospedado.
+
+6. **Criando o Link de Phishing:**
+   O SET configura um servidor e gera um link malicioso que redireciona a vítima para o site clonado. A vítima acredita que está acessando o Facebook, mas, na verdade, está fornecendo suas credenciais para o atacante.
+
+7. **Exploração:**
+   Assim que a vítima insere suas credenciais no site falso, elas são **capturadas** e enviadas para o atacante, permitindo o roubo de informações sensíveis.
+
+⚠️ **Por Que Isso é Importante?**
+Entender como os ataques de phishing funcionam não é só para fins educacionais. Este conhecimento é essencial para que você saiba como **proteger seus dados** e **evitar cair em ataques**. Além disso, para profissionais de **cibersegurança**, entender as táticas usadas por cibercriminosos ajuda a implementar **defesas mais eficazes** contra essas ameaças.
+
+**Lembre-se:** Este tipo de ataque deve ser **feito apenas com permissão explícita** (em um ambiente de testes autorizado, como parte de um **pentest**). A ética é fundamental para quem trabalha com segurança cibernética!
+
+🔐 **Proteja-se contra o Phishing!**  
+
+1. **Verifique URLs** antes de inserir dados em sites.
+2. **Use autenticação de dois fatores (2FA)** sempre que possível.
+3. **Desconfie de e-mails e links suspeitos.**
+
