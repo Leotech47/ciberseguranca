@@ -16,3 +16,6 @@ Na prática, OSINT pode ser utilizado para:
 
 Em um mundo digital cada vez mais interconectado, o **OSINT** se torna uma ferramenta essencial para fortalecer a segurança e mitigar riscos cibernéticos.  
 
+# Site para pesquisas em fontes abertas (OSINT):
+- https://osintframework.com/
+- 
