@@ -18,4 +18,14 @@ Em um mundo digital cada vez mais interconectado, o **OSINT** se torna uma ferra
 
 # Site para pesquisas em fontes abertas (OSINT):
 - https://osintframework.com/
-- 
+## 🔍 **OSINT Framework: A Powerful Resource for Open-Source Intelligence**
+
+O **OSINT Framework** é uma plataforma online que reúne ferramentas e recursos gratuitos de OSINT (Inteligência de Fontes Abertas). Criado com foco em segurança da informação, o site oferece uma vasta coleção de ferramentas para coleta de dados públicos de forma eficiente e acessível.
+
+**Principais funcionalidades:**
+- **Ferramentas por categoria**: Organiza recursos em diversas áreas, como redes sociais, pesquisa de pessoas, geolocalização e muito mais.
+- **Acesso a ferramentas gratuitas**: A maioria dos recursos disponíveis não requer custo, permitindo a coleta de dados sem complicações.
+- **Foco em segurança**: Ideal para profissionais de segurança cibernética, mas também útil para outras disciplinas.
+
+Explore mais sobre este framework acessando [OSINT Framework](https://osintframework.com/).  
+
