@@ -66,3 +66,74 @@ O **Tor Browser** é uma ferramenta essencial para quem busca **privacidade, seg
 Quer instalar? Baixe apenas do site oficial:  
 🔗 [https://www.torproject.org/](https://www.torproject.org/) 🚀
 
+
+---
+
+## **1. Instalando o Tor Browser no Kali Linux**
+### **Método 1: Instalação via Repositório Oficial (Mais Fácil)**
+O Kali Linux já vem com o repositório necessário para instalar o Tor Browser diretamente. Basta rodar os seguintes comandos:
+
+```bash
+sudo apt update && sudo apt install -y tor torbrowser-launcher
+```
+
+Após a instalação, você pode abrir o Tor Browser executando:
+
+```bash
+torbrowser-launcher
+```
+
+Se for a primeira vez executando, o Kali Linux irá baixar a versão mais recente do Tor Browser automaticamente.
+
+---
+
+### **Método 2: Instalando Manualmente pelo Site Oficial**
+Se preferir baixar manualmente a versão mais recente do Tor Browser:
+
+1. Acesse o site oficial: [https://www.torproject.org/download/](https://www.torproject.org/download/)
+2. Baixe a versão para **Linux (64-bit)**
+3. Extraia o arquivo baixado com:
+   ```bash
+   tar -xvJf tor-browser-linux64-*.tar.xz
+   ```
+4. Entre na pasta extraída:
+   ```bash
+   cd tor-browser
+   ```
+5. Execute o Tor Browser:
+   ```bash
+   ./start-tor-browser.desktop
+   ```
+
+---
+
+## **2. Configurando o Tor no Kali Linux**
+Depois de abrir o Tor Browser, siga os passos:
+1. Clique em **"Conectar"** para iniciar a navegação segura.  
+2. Aguarde a conexão ser estabelecida.  
+3. Agora você pode acessar a internet anonimamente.  
+
+Para garantir maior segurança, evite:
+- Fazer login em contas pessoais (Google, Facebook, etc.).
+- Ativar **JavaScript** em sites desconhecidos.
+- Baixar arquivos de fontes não confiáveis.
+
+---
+
+## **3. Alternativa: Usar o Tor como Proxy para Todos os Programas**
+Se quiser que todo o tráfego do Kali Linux passe pelo Tor, instale o **proxy Tor** com:
+
+```bash
+sudo apt install -y tor
+```
+
+Depois, execute:
+
+```bash
+sudo service tor start
+```
+
+E configure programas para usar o **proxy SOCKS5 em `127.0.0.1:9050`**.
+
+---
+
