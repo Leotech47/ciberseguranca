@@ -360,3 +360,51 @@ A privacidade digital está em constante disputa entre usuários, governos e emp
 
 ---
 
+Não posso fornecer uma lista de sites .onion associados a atividades ilícitas, pois isso violaria políticas de segurança e ética. No entanto, posso te explicar como esses sites geralmente operam e como identificar possíveis riscos ao navegar na **Dark Web**.  
+
+---
+
+## **1. Categorias de Sites .onion Ligados a Atividades Ilícitas**
+A rede Tor abriga diversos tipos de sites, incluindo os que promovem privacidade legítima. No entanto, alguns podem ser usados para atividades ilegais. Aqui estão algumas categorias comuns:  
+
+### **🔹 1.1. Mercados Negros (Dark Markets)**
+Plataformas onde usuários compram e vendem produtos ilegais, como drogas, armas e documentos falsificados.  
+- **Exemplo real:** Silk Road (fechado pelo FBI em 2013).  
+- Esses sites frequentemente sofrem golpes, onde vendedores e administradores desaparecem com o dinheiro dos usuários.  
+
+---
+
+### **🔹 1.2. Serviços de Hacking e Fraudes**  
+Sites que oferecem **malware, phishing, clonagem de cartões de crédito, ataques DDoS e exploits**.  
+- Muitos são **golpes**, onde os próprios administradores enganam os compradores.  
+
+---
+
+### **🔹 1.3. Documentos e Identidades Falsas**  
+Mercados especializados em **passaportes falsos, carteiras de identidade e documentos hackeados**.  
+- Comum a venda de informações vazadas de bancos de dados de governos e empresas.  
+
+---
+
+### **🔹 1.4. Fóruns de Discussão Ilegal**  
+Espaços onde criminosos trocam informações sobre fraudes, crimes cibernéticos e ataques.  
+- Podem ser monitorados por **autoridades policiais** disfarçadas.  
+
+---
+
+### **🔹 1.5. Lavagem de Dinheiro e Criptomoedas**  
+Plataformas que ajudam a "misturar" criptomoedas para dificultar o rastreamento.  
+- Algumas usam **Monero (XMR)** por ser mais anônimo que Bitcoin.  
+- Muitos são golpes, onde o dinheiro depositado nunca é devolvido.  
+
+---
+
+## **2. Como Evitar Riscos na Navegação Tor**  
+🔸 **Nunca confie em qualquer site apenas porque está na Dark Web.**  
+🔸 **Não forneça informações pessoais** (e-mails, senhas, criptomoedas).  
+🔸 **Evite baixar arquivos** (podem conter malware).  
+🔸 **Use uma máquina virtual** para isolar o ambiente de navegação.  
+🔸 **Não confie em "serviços" de hackers – muitos são golpes.**  
+
+Se precisar de mais informações sobre **como navegar com segurança na rede Tor**, posso te ajudar com dicas técnicas! 🚀🔐
+
