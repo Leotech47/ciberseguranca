@@ -60,3 +60,56 @@ A análise de metadados pode revelar **endereços IP internos e servidores** de 
 FOCA é uma ferramenta poderosa para **inteligência de segurança cibernética**, ajudando tanto profissionais de segurança quanto invasores a identificar falhas e vulnerabilidades em organizações. Seu uso ético é fundamental para evitar vazamentos de informações sensíveis e garantir a segurança de dados.
 
 Se utilizada corretamente, pode auxiliar equipes de segurança na **detecção de informações expostas** e na **mitigação de riscos**, reduzindo a superfície de ataque de uma organização.
+
+
+### **Onde Baixar e Como Instalar o FOCA de Forma Segura**
+
+A ferramenta **FOCA** foi originalmente desenvolvida pela empresa **ElevenPaths**, uma divisão da Telefónica, e é distribuída gratuitamente. No entanto, o desenvolvimento oficial foi descontinuado, e o site oficial não mantém mais atualizações. Mesmo assim, versões disponíveis ainda podem ser utilizadas para análises de metadados e inteligência de fontes abertas (**OSINT**).
+
+---
+
+## **1. Onde Baixar o FOCA com Segurança**
+Como o site oficial da ElevenPaths não disponibiliza mais a ferramenta, é recomendável baixar o FOCA apenas de fontes confiáveis, como:
+
+1. **GitHub** (repositórios mantidos por pesquisadores de segurança)  
+2. **Sites especializados em cibersegurança**, como OSINT Framework ou portais confiáveis da comunidade de Ethical Hacking.  
+3. **Wayback Machine (Internet Archive)** para encontrar versões arquivadas do site oficial.
+
+⚠ **Atenção:** Nunca baixe software de sites suspeitos ou desconhecidos, pois há risco de que versões adulteradas contenham malware.
+
+---
+
+## **2. Como Instalar o FOCA de Forma Segura no Windows**
+O FOCA foi projetado para rodar em **Windows**. Siga os passos abaixo para instalá-lo com segurança:
+
+### **Passo 1: Baixar o Instalador**
+- Se encontrar um repositório confiável no **GitHub**, baixe o arquivo ZIP contendo os executáveis da FOCA.  
+- Caso obtenha um instalador `.exe`, verifique a integridade do arquivo com um **antivírus** antes de executá-lo.
+
+### **Passo 2: Instalar o FOCA**
+- Extraia o conteúdo do arquivo ZIP (caso necessário).  
+- Execute o instalador ou abra diretamente o executável da ferramenta (`FOCA.exe`).
+
+### **Passo 3: Configurar o Ambiente**
+- O FOCA pode precisar de algumas bibliotecas para rodar corretamente, como:
+  - **.NET Framework 4.5 ou superior** (disponível no site da Microsoft).  
+  - **Drivers para conexão à internet** para buscar documentos em motores de busca.  
+
+### **Passo 4: Testar a Ferramenta**
+- Abra o FOCA e insira um **domínio ou palavra-chave** para começar a busca por documentos públicos.  
+- Analise os metadados extraídos e veja quais informações sensíveis podem estar disponíveis.
+
+---
+
+## **3. Alternativas Caso o FOCA Não Esteja Disponível**
+Se o FOCA não estiver mais acessível, algumas **ferramentas alternativas** podem ser utilizadas para análise de metadados:
+
+- **ExifTool** – Análise de metadados em imagens e documentos.  
+- **Metagoofil** – Pesquisa e extração de metadados de documentos na web.  
+- **OSINT Framework** – Plataforma que lista diversas ferramentas de inteligência de fontes abertas.  
+
+---
+
+## **Conclusão**
+A instalação do FOCA deve ser feita com cuidado, verificando sempre a fonte do download e utilizando **ambientes seguros**, como máquinas virtuais ou sistemas isolados para evitar riscos. Se não encontrar uma versão confiável, **alternativas como Metagoofil e ExifTool** podem suprir a necessidade de análise de metadados.
+
