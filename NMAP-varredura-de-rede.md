@@ -220,5 +220,105 @@ Esse tipo de varredura é importante para determinar a segurança de uma máquin
 
 ---
 
+Para instalar o **Nmap** em uma **máquina virtual** (VM) usando o **Oracle VM VirtualBox**, o processo de instalação depende do sistema operacional que você está utilizando na VM. Vou guiar você por três possíveis cenários: **Ubuntu/Debian**, **CentOS/RHEL** e **Windows**.
+
+### **1. Instalando o Nmap em uma VM com Ubuntu/Debian**
+
+Se você estiver usando uma VM rodando uma distribuição baseada no Debian (como o Ubuntu), você pode usar o gerenciador de pacotes **APT** para instalar o Nmap.
+
+#### Passos:
+1. **Abra o terminal** na sua máquina virtual (VM).
+2. **Atualize os repositórios de pacotes**:
+   ```bash
+   sudo apt update
+   ```
+3. **Instale o Nmap**:
+   ```bash
+   sudo apt install nmap
+   ```
+4. **Verifique a instalação**:
+   Após a instalação, verifique se o Nmap foi instalado corretamente com o comando:
+   ```bash
+   nmap --version
+   ```
+
+### **2. Instalando o Nmap em uma VM com CentOS/RHEL**
+
+Se você estiver utilizando uma distribuição baseada no **Red Hat**, como **CentOS**, o **YUM** ou **DNF** (dependendo da versão) será o gerenciador de pacotes.
+
+#### Passos:
+1. **Abra o terminal** na sua máquina virtual.
+2. **Instale o Nmap** usando o **DNF** ou **YUM**:
+   - Para versões mais recentes do CentOS/RHEL (com DNF):
+     ```bash
+     sudo dnf install nmap
+     ```
+   - Para versões mais antigas (usando YUM):
+     ```bash
+     sudo yum install nmap
+     ```
+3. **Verifique a instalação**:
+   ```bash
+   nmap --version
+   ```
+
+### **3. Instalando o Nmap em uma VM com Windows**
+
+Caso você esteja utilizando o **Windows** na sua máquina virtual, você pode usar o **instalador oficial** do Nmap para Windows.
+
+#### Passos:
+1. **Baixe o instalador**:
+   - Acesse o [site oficial do Nmap](https://nmap.org/download.html).
+   - Na seção "Windows binaries", baixe o instalador `.exe` mais recente.
+   
+2. **Execute o instalador**:
+   - Após o download, execute o arquivo `.exe`.
+   - Durante a instalação, você pode escolher se deseja instalar o **Nmap**, o **Zenmap** (interface gráfica) e o **Ncat** (ferramenta de rede adicional).
+   - **Certifique-se de selecionar a opção "Add Nmap to system PATH"**, isso permitirá que você execute o Nmap diretamente de qualquer prompt de comando.
+
+3. **Finalização da instalação**:
+   - Conclua a instalação e abra o **Prompt de Comando** ou **PowerShell**.
+
+4. **Verifique a instalação**:
+   No Prompt de Comando, execute:
+   ```bash
+   nmap --version
+   ```
+
+### **Configurando Rede na VM**
+
+Certifique-se de que a sua máquina virtual (VM) tenha a configuração de rede adequada para acessar a rede à qual você deseja escanear. No **Oracle VM VirtualBox**, você pode usar as seguintes configurações de rede:
+
+1. **Modo de Rede:**
+   - Se a sua VM deve se conectar à sua rede local ou à internet, escolha **"Bridged Adapter"** (Adaptador em Ponte).
+   - Se você deseja que a VM tenha uma rede isolada entre a máquina host e a VM, escolha **"Internal Network"** ou **"Host-Only Adapter"**.
+
+2. **Verifique a conectividade:**
+   Antes de realizar qualquer varredura com o Nmap, teste a conectividade da sua VM com a rede:
+   ```bash
+   ping 8.8.8.8  # Para testar a conectividade com a internet
+   ping 192.168.x.x  # Para testar a conectividade com outros dispositivos da rede local
+   ```
+
+### **4. Executando o Nmap na VM**
+
+Após a instalação do Nmap, você pode começar a utilizá-lo na VM para fazer varreduras de rede. A partir da linha de comando (ou terminal na VM), use os comandos do Nmap como descrito anteriormente para descobrir hosts ativos, realizar varreduras de portas, e identificar serviços e vulnerabilidades.
+
+#### Exemplo básico para descobrir hosts ativos:
+```bash
+nmap -sn 192.168.1.0/24
+```
+
+#### Exemplo para varredura de portas:
+```bash
+nmap -p 80,443 192.168.1.10
+```
+
+### **Conclusão**
+
+Com esses passos, você deve ser capaz de instalar o Nmap em sua máquina virtual, seja ela rodando Linux ou Windows. Certifique-se de configurar corretamente a rede da VM para permitir que ela acesse os dispositivos ou serviços que você deseja escanear.
+
+
+
 Esses exemplos são apenas alguns dos muitos usos do Nmap, e a ferramenta pode ser personalizada para atender a diferentes necessidades de varredura de rede.
 
