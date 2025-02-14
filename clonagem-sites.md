@@ -207,3 +207,168 @@ Agora você sabe como:
 
 ---
 
+Aqui está um guia detalhado sobre como instalar e configurar o `wget` no Windows:
+
+---
+
+## **1️⃣ Baixar o `wget` para Windows**
+O `wget` não vem instalado por padrão no Windows, então precisamos baixar o executável manualmente.
+
+1. Acesse o site oficial:  
+   👉 [https://eternallybored.org/misc/wget/](https://eternallybored.org/misc/wget/)
+   
+2. Role para baixo até a seção **"Download"**.
+
+3. Escolha uma das versões disponíveis:
+   - **"Binary" (Executável .exe único):** Versão portátil que não requer instalação.
+   - **"Complete package, except sources" (Arquivo ZIP):** Contém `wget.exe` e bibliotecas adicionais.
+
+4. **Baixe a versão "Complete package" em formato ZIP** (recomendado para compatibilidade).
+
+---
+
+## **2️⃣ Extrair os Arquivos**
+Depois de baixar o arquivo ZIP, siga os passos abaixo:
+
+1. **Localize o arquivo baixado** (normalmente está na pasta `Downloads`).
+2. **Clique com o botão direito no arquivo ZIP** e selecione **"Extrair Tudo..."**.
+3. Escolha um local para extrair os arquivos.  
+   - Exemplo: `C:\Program Files\wget\` ou `C:\wget\` (mais simples).
+4. **Confirme e extraia os arquivos**.
+
+Após a extração, você verá um arquivo chamado **`wget.exe`** dentro da pasta.
+
+---
+
+## **3️⃣ Adicionar o `wget` ao PATH do Windows (Opcional, mas Recomendado)**
+Adicionar o `wget` ao **PATH** permite executá-lo de qualquer lugar no Prompt de Comando, sem precisar estar na pasta do executável.
+
+### **Passo a Passo para Adicionar ao PATH:**
+1. **Pressione `Win + R`**, digite `sysdm.cpl` e pressione **Enter**.
+2. Vá até a aba **"Avançado"** e clique em **"Variáveis de Ambiente"**.
+3. Na seção **"Variáveis do sistema"**, encontre a variável **"Path"** e clique em **"Editar"**.
+4. Clique em **"Novo"** e adicione o caminho da pasta onde extraiu o `wget`.  
+   - Exemplo: `C:\Program Files\wget\` ou `C:\wget\`
+5. Clique em **OK**, feche todas as janelas e reinicie o computador (ou o Prompt de Comando) para aplicar as mudanças.
+
+---
+
+## **4️⃣ Testar se o `wget` está Funcionando**
+Agora, vamos verificar se o `wget` foi instalado corretamente:
+
+1. **Abra o Prompt de Comando (`cmd`)**:
+   - Pressione `Win + R`, digite `cmd` e pressione **Enter**.
+2. Digite o seguinte comando e pressione **Enter**:
+   ```cmd
+   wget --version
+   ```
+3. Se tudo estiver correto, você verá a versão do `wget` e algumas informações sobre ele.
+
+---
+
+## **5️⃣ Testar um Download Simples**
+Agora, teste um download para garantir que o `wget` está funcionando corretamente:
+
+```cmd
+wget https://www.example.com/file.zip
+```
+
+Se o download iniciar normalmente, o `wget` está instalado e configurado corretamente! 🎉
+
+---
+
+## **Conclusão**
+Agora você tem o `wget` instalado no Windows e configurado no PATH. Com isso, pode usá-lo facilmente no Prompt de Comando para baixar arquivos, sites completos e muito mais. 
+
+---
+
+O `wget` é uma ferramenta de linha de comando utilizada para baixar arquivos da internet via protocolos como **HTTP, HTTPS e FTP**. Ele é especialmente útil para downloads automáticos e agendados, permitindo baixar páginas da web, arquivos, diretórios inteiros e até sites completos.
+
+## 🔹 **Principais Recursos do `wget`**
+- Download de arquivos de forma recursiva (espelhamento de sites)
+- Suporte a proxies e autenticação
+- Continuação de downloads interrompidos
+- Trabalha em segundo plano (background)
+- Suporte a protocolos HTTP, HTTPS e FTP
+
+---
+
+## 🔹 **Como Instalar o `wget`**
+
+A instalação do `wget` varia conforme o sistema operacional:
+
+### **Linux (Ubuntu/Debian)**
+```bash
+sudo apt update
+sudo apt install wget -y
+```
+
+### **Linux (CentOS/RHEL)**
+```bash
+sudo yum install wget -y
+```
+
+### **macOS (via Homebrew)**
+```bash
+brew install wget
+```
+
+### **Windows**
+1. Baixe o executável do `wget` no site oficial:  
+   👉 [https://eternallybored.org/misc/wget/](https://eternallybored.org/misc/wget/)
+2. Extraia os arquivos e adicione o caminho do `wget.exe` à variável de ambiente `PATH` (opcional para facilitar o uso).
+
+---
+
+## 🔹 **Como Usar o `wget`**
+
+Depois de instalado, você pode usar o `wget` diretamente no terminal ou prompt de comando. Veja alguns exemplos:
+
+### 📌 **Baixar um único arquivo**
+```bash
+wget https://exemplo.com/arquivo.zip
+```
+
+### 📌 **Renomear o arquivo baixado**
+```bash
+wget -O novo_nome.zip https://exemplo.com/arquivo.zip
+```
+
+### 📌 **Baixar um site inteiro (modo espelho)**
+```bash
+wget --mirror --convert-links --adjust-extension --page-requisites --no-parent https://exemplo.com
+```
+
+### 📌 **Baixar um arquivo ignorando certificado SSL (útil para sites com certificados inválidos)**
+```bash
+wget --no-check-certificate https://exemplo.com/arquivo.zip
+```
+
+### 📌 **Continuar um download interrompido**
+```bash
+wget -c https://exemplo.com/arquivo.zip
+```
+
+### 📌 **Baixar múltiplos arquivos de uma lista**
+Se você tem um arquivo `lista.txt` com links de arquivos para baixar:
+```bash
+wget -i lista.txt
+```
+
+### 📌 **Baixar com limite de velocidade**
+```bash
+wget --limit-rate=200k https://exemplo.com/arquivo.zip
+```
+
+### 📌 **Baixar com autenticação (usuário e senha)**
+```bash
+wget --user=usuario --password=senha https://exemplo.com/restrito.zip
+```
+
+---
+
+## 🔹 **Conclusão**
+O `wget` é uma ferramenta poderosa para baixar arquivos automaticamente, seja um único arquivo ou sites inteiros. Com suas opções avançadas, é ideal para automação de downloads em servidores e scripts.
+
+---
+
