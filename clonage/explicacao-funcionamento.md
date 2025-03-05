@@ -1,5 +1,4 @@
-Claro, aqui está a explicação do código em notação Markdown, pronta para ser usada em um arquivo README.md no GitHub:
-
+# Explicação do código:
 ```markdown
 # Explicação do Código Selenium para Obtenção do HTML de uma Página Web
 
