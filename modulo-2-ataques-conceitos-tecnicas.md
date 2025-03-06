@@ -9,4 +9,8 @@ Muitas vezes, o spyware se junta ao software legítimo ou aos cavalos de Tróia.
 - Adware: O adware é frequentemente instalado com algumas versões de software e é projetado para fornecer anúncios automaticamente a um usuário, na maioria das vezes em um navegador da Web. Você sabe quando vê! É difícil ignorar quando você se depara com anúncios pop-up constantes na tela.
 É comum o adware vir com spyware.
 
-- 
+- Backdoor (porta dos fundos): Esse tipo de malware é usado para obter acesso não autorizado, ignorando os procedimentos normais de autenticação para acessar um sistema. Como resultado, os hackers podem obter acesso remoto a recursos em uma aplicação e emitir comandos do sistema remoto.
+Um backdoor funciona em segundo plano e é difícil de detectar.
+
+- Ransomware: Malware projetado para manter um sistema de computador, ou os dados incluídos nele, presos até que o pagamento seja feito. O ransomware geralmente funciona criptografando os dados para que você não possa acessá-los.
+Algumas versões de ransomware podem tirar proveito de vulnerabilidades específicas do sistema para bloqueá-lo. O ransomware é frequentemente disseminado por e-mails de phishing que o incentivam a baixar um anexo mal-intencionado ou uma vulnerabilidade de software.
