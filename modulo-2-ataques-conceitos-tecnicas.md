@@ -23,8 +23,9 @@ Se você concordar em executar o programa específico, seu sistema será infecta
 Também é comum que rootkits modifiquem a computação forense do sistema e como ferramentas de monitoramento, o que os torna muito difíceis de serem detectados. Na maioria dos casos, um computador infectado por um rootkit precisa ser desligado e qualquer software necessário reinstalado.
 
 - Virus: Um vírus é um tipo de programa de computador que, quando executado, se replica e se anexa a outros arquivos pendentes, como um documento, ao inserir seu próprio código. A maioria dos vírus necessita de ativação do usuário final e pode ser ativada em uma hora ou em dados específicos.
-Os vírus são relativamente inofensivos, como aqueles que exibem uma imagem divertida. Ou podem ser destrutivos, como aqueles que modificam ou excluem dados.
-O vírus também pode ser programado para ser modificado e evitar a detecção. Agora, a maioria dos vírus se espalha por unidades USB, discos ópticos, compartilhamentos de rede ou e-mail.
+  Os vírus são relativamente inofensivos, como aqueles que exibem uma imagem divertida. Ou podem ser destrutivos, como aqueles que modificam ou excluem dados.
+  O vírus também pode ser programado para ser modificado e evitar a detecção. Agora, a maioria dos vírus se espalha por unidades USB, discos ópticos, compartilhamentos de 
+  rede ou e-mail.
 
 - Cavalo de troia: Esse malware realiza operações mal-intencionadas mascarando sua verdadeira intenção. Pode parecer legítimo, mas é, de fato, muito perigoso. Os cavalos de troia exploram as particularidades do usuário e são encontrados com mais frequência em arquivos de imagem, arquivos de áudio ou jogos.
 Ao contrário do vírus, os cavalos de troia não se replicam automaticamente, mas agem como um engodo para enganar o software mal-intencionado e passar por usuários desavisados.
