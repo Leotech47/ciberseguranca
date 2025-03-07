@@ -73,4 +73,6 @@ Código mal-intencionado que anexa a programas legítimos e geralmente se espalh
 Selecione uma opção
 Código que se replica de forma independente, explorando vulnerabilidades em redes fraudulentas:
 
-Selecione uma opção
+A Seguir...
+Existem muitos tipos diferentes de malware que representam uma ameaça para sua empresa, mas como os crimes digitais podem invadir suas redes e sistemas? Eles têm muitos meios à sua disposição.
+
