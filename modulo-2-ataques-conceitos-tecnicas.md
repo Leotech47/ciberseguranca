@@ -14,3 +14,12 @@ Um backdoor funciona em segundo plano e é difícil de detectar.
 
 - Ransomware: Malware projetado para manter um sistema de computador, ou os dados incluídos nele, presos até que o pagamento seja feito. O ransomware geralmente funciona criptografando os dados para que você não possa acessá-los.
 Algumas versões de ransomware podem tirar proveito de vulnerabilidades específicas do sistema para bloqueá-lo. O ransomware é frequentemente disseminado por e-mails de phishing que o incentivam a baixar um anexo mal-intencionado ou uma vulnerabilidade de software.
+
+- Scareware (software do terror): Este é um tipo de malware que usa estratégia de "medo" para induzi-lo a tomar uma ação específica. O Scareware consiste principalmente em janelas com estilo de sistema operacional que aparecem para alertar que seu sistema está em risco e precisa executar um programa específico para que ele retorne à operação normal.
+Se você concordar em executar o programa específico, seu sistema será infectado por malware.
+
+- Rootkit: Esse malware foi projetado para modificar o sistema operacional para criar um backdoor, que os invasores podem usar para acessar seu computador remotamente. A maioria dos rootkits utiliza as vulnerabilidades do software para escalar privilégios e modificar arquivos do sistema.
+
+Também é comum que rootkits modifiquem a computação forense do sistema e como ferramentas de monitoramento, o que os torna muito difíceis de serem detectados. Na maioria dos casos, um computador infectado por um rootkit precisa ser desligado e qualquer software necessário reinstalado.
+
+- 
