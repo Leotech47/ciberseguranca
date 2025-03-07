@@ -56,3 +56,21 @@ Isso é exatamente o que poderia estar acontecendo na @Apollo!
 Com base no que você sabe agora, você acha que pode identificar os diferentes tipos de malware nas autoridades deles?
 Vamos ver!
 
+2.1.3 O que você acha?
+Para responder a cada uma das investigações sobre o tipo de malware correto, selecione uma resposta em cada menu suspenso e clique em Enviar.
+
+Malware projetado para rastrear sua atividade on-line e capturar seus dados:
+
+Selecione uma opção
+Software que entrega anúncios automaticamente:
+
+Selecione uma opção
+Malware que mantém um sistema de computador cativo até que um pagamento seja feito ao invasor: 
+
+Selecione uma opção
+Código mal-intencionado que anexa a programas legítimos e geralmente se espalha por unidades USB, mídia óptica, compartilhamentos de rede ou e-mail:
+
+Selecione uma opção
+Código que se replica de forma independente, explorando vulnerabilidades em redes fraudulentas:
+
+Selecione uma opção
