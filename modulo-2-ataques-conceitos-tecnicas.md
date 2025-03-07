@@ -91,3 +91,36 @@ Por exemplo, fingir que precisa dos dados pessoais ou financeiros de uma pessoa 
 Pretexto: Isso ocorre quando um invasor segue rapidamente uma pessoa autorizada até um local físico seguro.
 
 Pretexto: É quando um hacker solicita informações pessoais de uma pessoa em troca de algo, como um brinde gratuito.
+
+2.2.2 Negação de Serviço
+Os ataques de negação de serviço (DoS) são um tipo de ataque de rede relativamente simples de realizar, mesmo por um invasor não qualificado. Um ataque de negação de serviço (DoS) resulta em algum tipo de interrupção de serviço aos usuários, dispositivos ou aplicativos.
+
+Selecione as imagens para descobrir mais sobre os dois principais tipos de ataques de DoS.
+Os ataques de negação de serviço (DoS) são considerados um grande risco porque podem facilmente interromper a comunicação e causar perda significativa de tempo e dinheiro.
+
+
+2.2.4 Rede de bots (Botnets):
+Um computador bot normalmente é infectado ao visitar um site, abrir um anexo de e-mail ou abrir um arquivo de mídia infectado. Uma botnet é um grupo de robôs (bots), conectado pela Internet, com a capacidade de ser controlado por um indivíduo ou grupo mal-intencionado. Ela pode ter centenas de milhares, ou até centenas de milhares, de bots que normalmente são controlados por meio de um servidor de comando e controle.
+
+Esses robôs podem ser acionados para distribuir malware, lançar ataques de DDoS, distribuir e-mail de spam ou executar ataques de senha de força bruta. Os cibercriminosos alugam botnets para terceiros para fins nefastos.
+
+Muitas empresas. como a Cisco, força as atividades de rede por meio de filtros de tráfego de botnet para identificar qualquer local de botnet.
+Selecione as imagens para saber mais.
+
+- Os bots infectados tentam se comunicar com um host de comando e controle na Internet.
+O filtro de botnet do Cisco Firewall é um recurso que detecta o tráfego proveniente de dispositivos infectados como o código mal-intencionado do botnet.
+O serviço Cisco Security Intelligence Operations (SIO) na nuvem envia os filtros atualizados para o firewall, que correspondem ao tráfego de novos botnets conhecidos.
+Os alertas são enviados à equipe de segurança interna da Cisco para notificá-los sobre os dispositivos infectados que estão gerando tráfego mal-intencionado, para que possam evitar, mitigar e corrigir esses problemas.
+
+2.2.5 Ataques On-Path
+Os invasores no caminho interceptam ou modificam as comunicações entre dois dispositivos, como um navegador e um servidor da Web, para coletar informações ou passar por um dos dispositivos.
+
+Esse tipo de ataque também é chamado de ataque homem no meio ou homem no celular (Man-in-the-middle):
+
+- Um ataque de MitM acontece quando uma fraude digital assume o controle de um dispositivo sem o conhecimento do usuário. Com esse nível de acesso, o invasor pode interceptar e capturar informações do usuário antes de transmiti-las ao destino desejado. Esses tipos de ataques costumam ser usados ​​para roubar informações financeiras.
+
+Existem muitos tipos de malware que possuem recursos de ataque do MitM.
+
+- Uma variação do man-in-middle, MitMo é um tipo de ataque usado para assumir o controle do dispositivo móvel de um usuário. Quando infectado, o dispositivo móvel é instruído a capturar informações do usuário e enviá-las aos invasores. O ZeuS é um exemplo de pacote de malware com recursos MitMo. Ele permite que os invasores capturem silenciosamente as mensagens SMS de verificação de duas etapas enviadas aos usuários.
+
+
