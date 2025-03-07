@@ -36,3 +36,23 @@ Ao contrário do vírus, os cavalos de troia não se replicam automaticamente, m
 Os worms compartilham padrões semelhantes: eles exploram vulnerabilidades do sistema, têm uma maneira de se propagar e contêm código mal-intencionado (carga útil) para causar danos a redes ou sistemas de computador.
 Os worms são responsáveis ​​por alguns dos ataques mais devastadores na Internet. Em 19 horas, o worm infectou mais de 300.000 servidores em 2001.
 
+2.1.2 Sintomas de Malware
+Agora você já sabe sobre os diferentes tipos de malware. Mas quais podem ser os sintomas?
+Faça uma pausa e veja o que você pode criar e, quando estiver pronto, selecione a imagem para revelar algumas respostas possíveis.
+Independentemente do tipo de malware ou de qual sistema foi infectado, existem alguns sintomas comuns que podem ser observados. Entre eles estão:
+
+- um aumento no uso da unidade de processamento central (CPU), o que torna o dispositivo mais lento
+- o computador congela ou trava com frequência
+- Há uma diminuição na velocidade de navegação na Web.
+- Existem problemas inexplicáveis ​​com conexões de rede.
+- arquivos modificados ou excluídos
+- Há presença de arquivos, programas ou ícones de desktop desconhecidos.
+- Processos ou serviços desconhecidos em execução
+- Os programas estão se desligando ou reconfigurando sozinhos.
+- Os e-mails são enviados sem conhecimento ou consentimento do usuário.
+
+repetir
+Isso é exatamente o que poderia estar acontecendo na @Apollo!
+Com base no que você sabe agora, você acha que pode identificar os diferentes tipos de malware nas autoridades deles?
+Vamos ver!
+
