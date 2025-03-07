@@ -18,11 +18,13 @@ Algumas versões de ransomware podem tirar proveito de vulnerabilidades específ
 - Scareware (software do terror): Este é um tipo de malware que usa estratégia de "medo" para induzi-lo a tomar uma ação específica. O Scareware consiste principalmente em janelas com estilo de sistema operacional que aparecem para alertar que seu sistema está em risco e precisa executar um programa específico para que ele retorne à operação normal.
 Se você concordar em executar o programa específico, seu sistema será infectado por malware.
 
-- Rootkit: Esse malware foi projetado para modificar o sistema operacional para criar um backdoor, que os invasores podem usar para acessar seu computador remotamente. A maioria dos rootkits utiliza as vulnerabilidades do software para escalar privilégios e modificar arquivos do sistema.
+- Rootkit: Esse malware foi projetado para modificar o sistema operacional para criar um backdoor, que os invasores podem usar para acessar seu computador remotamente. A 
+  maioria dos rootkits utiliza as vulnerabilidades do software para escalar privilégios e modificar arquivos do sistema.
+  Também é comum que rootkits modifiquem a computação forense do sistema e como ferramentas de monitoramento, o que os torna muito difíceis de serem detectados. Na maioria 
+  dos casos, um computador infectado por um rootkit precisa ser desligado e qualquer software necessário reinstalado.
 
-Também é comum que rootkits modifiquem a computação forense do sistema e como ferramentas de monitoramento, o que os torna muito difíceis de serem detectados. Na maioria dos casos, um computador infectado por um rootkit precisa ser desligado e qualquer software necessário reinstalado.
-
-- Virus: Um vírus é um tipo de programa de computador que, quando executado, se replica e se anexa a outros arquivos pendentes, como um documento, ao inserir seu próprio código. A maioria dos vírus necessita de ativação do usuário final e pode ser ativada em uma hora ou em dados específicos.
+- Virus: Um vírus é um tipo de programa de computador que, quando executado, se replica e se anexa a outros arquivos pendentes, como um documento, ao inserir seu próprio 
+  código. A maioria dos vírus necessita de ativação do usuário final e pode ser ativada em uma hora ou em dados específicos.
   Os vírus são relativamente inofensivos, como aqueles que exibem uma imagem divertida. Ou podem ser destrutivos, como aqueles que modificam ou excluem dados.
   O vírus também pode ser programado para ser modificado e evitar a detecção. Agora, a maioria dos vírus se espalha por unidades USB, discos ópticos, compartilhamentos de 
   rede ou e-mail.
