@@ -32,3 +32,7 @@ dos casos, um computador infectado por um rootkit precisa ser desligado e qualqu
 - Cavalo de troia: Esse malware realiza operações mal-intencionadas mascarando sua verdadeira intenção. Pode parecer legítimo, mas é, de fato, muito perigoso. Os cavalos de troia exploram as particularidades do usuário e são encontrados com mais frequência em arquivos de imagem, arquivos de áudio ou jogos.
 Ao contrário do vírus, os cavalos de troia não se replicam automaticamente, mas agem como um engodo para enganar o software mal-intencionado e passar por usuários desavisados.
 
+- Worms: Esse é um tipo de malware que se replica para se espalhar de um computador para outro. Ao contrário de um vírus, que requer um programa host para ser executado, os worms podem ser executados por si próprios. Além da infecção inicial do host, eles não desativam a participação do usuário e podem se espalhar rapidamente pela rede.
+Os worms compartilham padrões semelhantes: eles exploram vulnerabilidades do sistema, têm uma maneira de se propagar e contêm código mal-intencionado (carga útil) para causar danos a redes ou sistemas de computador.
+Os worms são responsáveis ​​por alguns dos ataques mais devastadores na Internet. Em 19 horas, o worm infectou mais de 300.000 servidores em 2001.
+
