@@ -76,3 +76,18 @@ Código que se replica de forma independente, explorando vulnerabilidades em red
 A Seguir...
 Existem muitos tipos diferentes de malware que representam uma ameaça para sua empresa, mas como os crimes digitais podem invadir suas redes e sistemas? Eles têm muitos meios à sua disposição.
 
+2.2 Métodos de infiltração
+2.2.1 Engenharia social
+Engenharia social – manipulação do indivíduo para executar ações ou divulgar informações adicionais Os engenheiros sociais frequentemente dependem da boa vontade das pessoas para ajudar, mas também miram nos pontos fracos. Por exemplo, um invasor ligará para um funcionário autorizado com um problema urgente que sairá imediatamente do acesso à rede e apelará para a vaidade, ganância ou invocação de autoridade do funcionário usando técnicas de remoção de nome para obter esse acesso.
+
+Selecione as setas para descobrir mais sobre alguns tipos comuns de ataques de engenharia social.
+
+- Duas máscaras de teatro: uma vermelha e uma amarelaÍcones de duas pessoas, muito próximas, propõem a passar por uma porta segura. A pessoa na frente está em verde, a pessoa logo atrás está em vermelho (indicando que não deve ser capaz de entrar)um preço “grátis”
+
+Isso ocorre quando um invasor se liga a um indivíduo e mente para ele na tentativa de obter acesso a dados privilegiados.
+
+Por exemplo, fingir que precisa dos dados pessoais ou financeiros de uma pessoa para confirmar sua identidade.
+
+Pretexto: Isso ocorre quando um invasor segue rapidamente uma pessoa autorizada até um local físico seguro.
+
+Pretexto: É quando um hacker solicita informações pessoais de uma pessoa em troca de algo, como um brinde gratuito.
