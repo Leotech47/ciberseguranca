@@ -19,9 +19,9 @@ Algumas versões de ransomware podem tirar proveito de vulnerabilidades específ
 Se você concordar em executar o programa específico, seu sistema será infectado por malware.
 
 - Rootkit: Esse malware foi projetado para modificar o sistema operacional para criar um backdoor, que os invasores podem usar para acessar seu computador remotamente. A 
-  maioria dos rootkits utiliza as vulnerabilidades do software para escalar privilégios e modificar arquivos do sistema.
-  Também é comum que rootkits modifiquem a computação forense do sistema e como ferramentas de monitoramento, o que os torna muito difíceis de serem detectados. Na maioria 
-  dos casos, um computador infectado por um rootkit precisa ser desligado e qualquer software necessário reinstalado.
+maioria dos rootkits utiliza as vulnerabilidades do software para escalar privilégios e modificar arquivos do sistema.
+Também é comum que rootkits modifiquem a computação forense do sistema e como ferramentas de monitoramento, o que os torna muito difíceis de serem detectados. Na maioria 
+dos casos, um computador infectado por um rootkit precisa ser desligado e qualquer software necessário reinstalado.
 
 - Virus: Um vírus é um tipo de programa de computador que, quando executado, se replica e se anexa a outros arquivos pendentes, como um documento, ao inserir seu próprio 
   código. A maioria dos vírus necessita de ativação do usuário final e pode ser ativada em uma hora ou em dados específicos.
