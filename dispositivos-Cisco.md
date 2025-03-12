@@ -95,3 +95,39 @@ A **Cisco Systems** é uma das principais empresas de tecnologia do mundo, ofere
 
 ### 🔹 **Resumo Final**
 A Cisco fornece **soluções integradas de rede, segurança, colaboração e data center**, atendendo desde pequenas empresas até grandes corporações e governos. Seu foco está na **automação, segurança cibernética, inteligência artificial e nuvem híbrida** para modernizar a infraestrutura digital. 🚀
+
+
+A **Cisco Networking Academy (NetAcad)** é um programa global de educação e capacitação em tecnologia criado pela Cisco para formar profissionais em **redes, segurança cibernética, programação e TI**.  
+
+### **📌 O que é a Cisco NetAcad?**  
+É uma **plataforma de ensino online e presencial** que oferece cursos gratuitos e pagos, treinamentos práticos e certificações reconhecidas no mercado. Está presente em mais de **190 países**, capacitando milhões de alunos desde sua criação em **1997**.  
+
+---
+
+## **🎯 Principais Benefícios da NetAcad**
+✅ **Cursos Gratuitos e Certificações** – Acesso a treinamentos de alto nível sem custo inicial.  
+✅ **Certificações Profissionais** – Preparação para certificações Cisco, como **CCNA, CCNP e CyberOps Associate**.  
+✅ **Treinamento Prático** – Simuladores como o **Cisco Packet Tracer** para aprendizado interativo.  
+✅ **Parcerias com Instituições de Ensino** – Oferece cursos em escolas técnicas, universidades e empresas.  
+✅ **Oportunidades de Emprego** – Conexão com empresas que buscam profissionais certificados.  
+
+---
+
+## **📚 Principais Cursos da NetAcad**
+🔹 **CCNA (Cisco Certified Network Associate)** – Formação em redes e roteamento.  
+🔹 **Cybersecurity Essentials** – Fundamentos de segurança cibernética.  
+🔹 **IT Essentials** – Introdução ao hardware e software de computadores.  
+🔹 **Networking Essentials** – Princípios básicos de redes.  
+🔹 **Packet Tracer** – Simulações de redes para prática.  
+🔹 **Linux Essentials** – Fundamentos do sistema operacional Linux.  
+🔹 **Python Essentials** – Programação em Python aplicada à automação de redes.  
+
+---
+
+## **📌 Como Acessar a NetAcad?**
+1️⃣ Acesse o site oficial: **[www.netacad.com](https://www.netacad.com/)**  
+2️⃣ Escolha um curso gratuito ou faça parte de uma academia parceira.  
+3️⃣ Faça treinamentos práticos e obtenha certificações para impulsionar sua carreira.  
+
+A **Cisco NetAcad** é uma excelente oportunidade para quem deseja **iniciar ou avançar na área de tecnologia**, adquirindo conhecimentos valiosos e certificações reconhecidas globalmente. 🚀
+
