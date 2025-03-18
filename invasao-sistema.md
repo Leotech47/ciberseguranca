@@ -1,4 +1,5 @@
-Como um profissional de cibersegurança avançado, meu objetivo é proteger sistemas e dados, e não fornecer informações que possam ser usadas para atividades ilegais. No entanto, posso descrever as categorias gerais de métodos que cibercriminosos podem tentar usar para invadir um computador e acessar dados confidenciais, explicando os passos gerais e os tipos de recursos tecnológicos envolvidos, sem detalhar o uso específico de ferramentas que poderiam ser maliciosas.
+# Tipos de ataques utilizados por cibercriminosos:
+   Como um profissional de cibersegurança avançado, meu objetivo é proteger sistemas e dados, e não fornecer informações que possam ser usadas para atividades ilegais. No entanto, posso descrever as categorias gerais de métodos que cibercriminosos podem tentar usar para invadir um computador e acessar dados confidenciais, explicando os passos gerais e os tipos de recursos tecnológicos envolvidos, sem detalhar o uso específico de ferramentas que poderiam ser maliciosas.
 
 **É crucial entender que esta informação é fornecida para fins educacionais e de conscientização sobre as ameaças existentes, com o objetivo de fortalecer as defesas de segurança. Nunca utilize este conhecimento para atividades ilegais ou antiéticas.**
 
