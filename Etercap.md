@@ -1,3 +1,5 @@
+## Prompt utilizado: Aja como um profissional de cibersegurança e explique detalhadamente como funciona o etercap e dê um exemplo prático de utilização desta ferramenta pelo pentester. Gere a resposta em notação markdown
+
 ## Ettercap: A Ferramenta de Análise e Ataque Man-in-the-Middle
 
 Como profissional de cibersegurança, posso afirmar que o Ettercap é uma ferramenta poderosa e versátil, amplamente utilizada em testes de penetração (pentesting) para análise de tráfego de rede e execução de ataques Man-in-the-Middle (MitM). Desenvolvido para sistemas Unix-like, o Ettercap permite interceptar, inspecionar e até mesmo modificar o tráfego de dados que circula em uma rede local (LAN).
