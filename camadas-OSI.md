@@ -61,3 +61,98 @@ O modelo OSI (Open Systems Interconnection) é um modelo conceitual criado pela 
 | **1. Física** | Transmite e recebe bits brutos de dados através do meio físico. | Ethernet (padrões físicos), DSL, ISDN, Bluetooth, Wi-Fi (padrões físicos), USB | Define as características elétricas, mecânicas e funcionais da conexão física. | Não trabalha com portas lógicas de software. |
 
 Este quadro resumo oferece uma visão geral concisa de cada camada do modelo OSI, suas funcionalidades, os protocolos comumente utilizados e as portas associadas (principalmente nas camadas superiores). Compreender o modelo OSI é fundamental para profissionais de cibersegurança, pois ele fornece uma base para entender como as redes funcionam e como os diferentes protocolos interagem, o que é crucial para identificar vulnerabilidades e implementar medidas de segurança eficazes.
+
+
+**Host A (Remetente)** **Host B (Destinatário)**
+                                    (Rede 1)                                                                                   (Rede 2)
+                                         |                                                                                         |
+                                         v                                                                                         ^
+                                 +-----------------+                                                                 +-----------------+
+                                 | 7. Aplicação    | <-----------------------------------------------------------------> | 7. Aplicação    |
+                                 |     (Dados)     |                                                                   |     (Dados)     |
+                                 +-----------------+                                                                 +-----------------+
+                                         |                                                                                         ^
+                                         v                                                                                         |
+                                 +-----------------+                                                                 +-----------------+
+                                 | 6. Apresentação |                                                                   | 6. Apresentação |
+                                 |     (Dados)     |                                                                   |     (Dados)     |
+                                 +-----------------+                                                                 +-----------------+
+                                         |                                                                                         ^
+                                         v                                                                                         |
+                                 +-----------------+                                                                 +-----------------+
+                                 | 5. Sessão       |                                                                   | 5. Sessão       |
+                                 |     (Dados)     |                                                                   |     (Dados)     |
+                                 +-----------------+                                                                 +-----------------+
+                                         |                                                                                         ^
+                                         v                                                                                         |
+                                 +-----------------+                                                                 +-----------------+
+                                 | 4. Transporte  | <-----------------------------------------------------------------> | 4. Transporte  |
+                                 |   (Segmentos)   |                                                                   |   (Segmentos)   |
+                                 +-----------------+                                                                 +-----------------+
+                                         |                                                                                         ^
+                                         v                                                                                         |
+                                 +-----------------+                                                                 +-----------------+
+                                 | 3. Rede         | ---------------------> **Roteador (Rede 1)** ---------------------> | 3. Rede         |
+                                 |    (Pacotes)    |                                                                   |    (Pacotes)    |
+                                 +-----------------+                                                                 +-----------------+
+                                         |                                                                                         ^
+                                         v                                                                                         |
+                                 +-----------------+                                                                 +-----------------+
+                                 | 2. Enlace       | <-----------------------------------------------------------------> | 2. Enlace       |
+                                 |    (Quadros)    |                                                                   |    (Quadros)    |
+                                 +-----------------+                                                                 +-----------------+
+                                         |                                                                                         ^
+                                         v                                                                                         |
+                                 +-----------------+                                                                 +-----------------+
+                                 | 1. Física       | -----------------------------------------------------------------> | 1. Física       |
+                                 |     (Bits)      |                                                                   |     (Bits)      |
+                                 +-----------------+                                                                 +-----------------+
+                                         |                                                                                         ^
+                                         ---------------------------------------------------------------------------------------------
+                                                                         Meio Físico (Cabo, Fibra, Ar, etc.)
+
+**Legenda:**
+
+* **Host A (Remetente):** O computador que inicia a comunicação.
+* **Host B (Destinatário):** O computador que recebe a comunicação.
+* **Roteador (Rede 1):** Um dispositivo de rede que opera na Camada de Rede e encaminha pacotes entre diferentes redes. Pode haver múltiplos roteadores envolvidos.
+* **Dados:** A informação original a ser transmitida (Camadas 7, 6 e 5).
+* **Segmentos:** Dados divididos e encapsulados pela Camada de Transporte.
+* **Pacotes:** Segmentos encapsulados com informações de endereçamento de rede (IP) pela Camada de Rede.
+* **Quadros:** Pacotes encapsulados com informações de endereçamento físico (MAC) pela Camada de Enlace.
+* **Bits:** Os dados codificados em sinais elétricos, ópticos ou de rádio para transmissão física (Camada Física).
+
+**Fluxo da Transmissão:**
+
+1.  **Remetente (Host A):**
+    * A aplicação do usuário cria os **Dados** na Camada de Aplicação.
+    * Os dados passam para a Camada de Apresentação, onde podem ser formatados, criptografados ou comprimidos.
+    * Na Camada de Sessão, uma conexão (sessão) é estabelecida com a aplicação do destinatário.
+    * A Camada de Transporte segmenta os dados em **Segmentos** e adiciona informações de controle (como números de sequência e portas).
+    * A Camada de Rede encapsula os segmentos em **Pacotes**, adicionando os endereços IP de origem e destino.
+    * A Camada de Enlace encapsula os pacotes em **Quadros**, adicionando os endereços MAC dos dispositivos na rede local (inicialmente o endereço MAC do roteador).
+    * A Camada Física converte os quadros em **Bits** e os transmite através do meio físico.
+
+2.  **Através da Rede 1:**
+    * Os bits chegam ao roteador.
+    * O roteador processa até a Camada de Rede para determinar o próximo salto para o destino (Host B).
+    * O roteador reencapsula o pacote na Camada de Enlace para o próximo segmento da rede.
+    * Os bits são transmitidos para o próximo dispositivo na rota.
+
+3.  **Entre as Redes (Roteamento):**
+    * Os roteadores intermediários repetem o processo de desencapsulamento (até a Camada de Rede) e reencapsulamento para encaminhar os pacotes pela melhor rota até a Rede 2.
+
+4.  **Na Rede 2:**
+    * Os bits chegam ao host destinatário (Host B).
+    * **Destinatário (Host B):**
+        * A Camada Física recebe os **Bits** do meio físico.
+        * A Camada de Enlace desencapsula os bits em **Quadros** e verifica o endereço MAC de destino.
+        * A Camada de Rede desencapsula os quadros em **Pacotes** e verifica o endereço IP de destino.
+        * A Camada de Transporte desencapsula os pacotes em **Segmentos** e remonta os dados na ordem correta.
+        * A Camada de Sessão gerencia a sessão.
+        * A Camada de Apresentação lida com a tradução, descriptografia ou descompressão dos dados.
+        * Finalmente, a Camada de Aplicação entrega os **Dados** à aplicação do usuário.
+
+Este gráfico ilustra o fluxo de dados através das camadas do modelo OSI durante uma comunicação entre dois hosts em redes diferentes, mostrando o papel do roteador na Camada de Rede para o encaminhamento entre as redes.
+
+
