@@ -65,3 +65,91 @@ Onde:
 É crucial ressaltar que o uso do Ettercap e de técnicas de ARP spoofing deve ser realizado **apenas em ambientes controlados e com a devida autorização**. A utilização dessas ferramentas sem permissão é ilegal e antiética, podendo acarretar em sérias consequências legais. Em um cenário de pentest profissional, o escopo e as permissões são claramente definidos antes de qualquer atividade ser iniciada.
 
 Em resumo, o Ettercap é uma ferramenta poderosa para pentesters, permitindo a análise detalhada do tráfego de rede e a simulação de ataques Man-in-the-Middle. Compreender seu funcionamento e suas capacidades é fundamental para profissionais de cibersegurança que buscam identificar vulnerabilidades em redes e sistemas.
+
+---
+
+## Simulação de Ataque: Captura de Credenciais FTP com Ettercap
+
+Neste exemplo prático, vamos simular um ataque onde um pentester utiliza o Ettercap em conjunto com outras ferramentas para identificar o endereço IP de uma máquina alvo, interceptar o tráfego de rede e obter as credenciais de acesso a um servidor FTP não seguro.
+
+**Cenário:** Um pentester está realizando um teste de penetração em uma rede interna e suspeita que um usuário esteja utilizando um cliente FTP não seguro para se conectar a um servidor. O objetivo é capturar as credenciais de login desse usuário.
+
+**Passos:**
+
+1.  **Reconhecimento da Rede e Identificação do IP da Vítima:**
+
+    * O pentester inicia o processo de reconhecimento da rede para identificar os hosts ativos. Uma ferramenta fundamental para isso é o **Nmap (Network Mapper)**.
+    * Utilizando o Nmap, o pentester pode escanear a rede em busca de dispositivos ativos. Um comando comum seria:
+
+        ```bash
+        sudo nmap -sn 192.168.1.0/24
+        ```
+
+        Este comando realiza um "ping scan" na sub-rede `192.168.1.0/24` e lista os dispositivos que responderam.
+
+    * Após identificar os hosts ativos, o pentester pode realizar um escaneamento mais detalhado em um host específico para identificar serviços em execução. Por exemplo, para verificar se a porta 21 (FTP) está aberta em um determinado IP (digamos, `192.168.1.150`), o pentester pode usar:
+
+        ```bash
+        sudo nmap -sV -p 21 192.168.1.150
+        ```
+
+        O parâmetro `-sV` tenta determinar a versão do serviço em execução na porta, e `-p 21` especifica a porta a ser escaneada.
+
+    * Com base nas informações obtidas, o pentester identifica o endereço IP da máquina da vítima (digamos, `192.168.1.150`) e o endereço IP do gateway da rede (necessário para o ataque MitM, digamos, `192.168.1.1`).
+
+2.  **Execução do Ettercap para ARP Spoofing:**
+
+    * O pentester abre o Ettercap em sua máquina. Para este exemplo, vamos utilizar a interface de linha de comando (CLI).
+
+    * O comando para iniciar o ataque de ARP spoofing é semelhante ao exemplo anterior, especificando a interface de rede correta (substitua `eth0` pela sua interface):
+
+        ```bash
+        sudo ettercap -T -q -i eth0 -M arp:remote /192.168.1.150/ /192.168.1.1/
+        ```
+
+        Este comando instrui o Ettercap a realizar o ARP spoofing entre a máquina com IP `192.168.1.150` (a vítima) e a máquina com IP `192.168.1.1` (o gateway). O Ettercap enviará pacotes ARP falsificados para ambos os hosts, fazendo com que o tráfego destinado um ao outro passe pela máquina do pentester.
+
+3.  **Filtragem do Tráfego de Rede para o Protocolo FTP:**
+
+    * Com o ARP spoofing ativo, o Ettercap está capturando todo o tráfego que passa pela interface de rede do pentester. Para focar no tráfego FTP (que utiliza a porta 21), podemos utilizar os recursos de filtragem do Ettercap ou direcionar o tráfego capturado para outra ferramenta de análise.
+
+    * **Utilizando filtros no Ettercap (opcional):** O Ettercap permite criar filtros para visualizar apenas o tráfego de interesse. A sintaxe dos filtros no Ettercap é específica. Um filtro simples para a porta 21 poderia ser criado e carregado no Ettercap.
+
+    * **Utilizando o Wireshark em conjunto:** Uma abordagem mais comum e poderosa é utilizar o **Wireshark**, um analisador de protocolos de rede, em conjunto com o Ettercap. O Ettercap pode ser configurado para salvar o tráfego capturado em um arquivo no formato `pcap`, que pode ser posteriormente aberto e analisado no Wireshark.
+
+    * Para usar o Wireshark diretamente enquanto o Ettercap está rodando, o pentester pode abrir o Wireshark e selecionar a mesma interface de rede que o Ettercap está utilizando. O Wireshark capturará o tráfego que está passando pela interface, incluindo o tráfego redirecionado pelo ARP spoofing do Ettercap.
+
+    * No Wireshark, o pentester pode aplicar filtros de exibição para visualizar apenas o tráfego FTP. O filtro para isso seria:
+
+        ```
+        tcp.port == 21
+        ```
+
+4.  **Obtenção dos Dados do Usuário (Credenciais FTP):**
+
+    * Com o filtro FTP aplicado no Wireshark, o pentester pode analisar os pacotes capturados. As credenciais de login do FTP (nome de usuário e senha) são frequentemente transmitidas em texto plano durante a fase de autenticação, utilizando os comandos `USER` e `PASS`.
+
+    * Ao inspecionar os detalhes dos pacotes TCP na porta 21, o pentester pode procurar por pacotes contendo esses comandos e extrair o nome de usuário e a senha.
+
+    * Por exemplo, ao selecionar um pacote que contém o comando `USER`, os detalhes do pacote no Wireshark mostrarão o nome de usuário enviado pelo cliente FTP. Da mesma forma, um pacote subsequente contendo o comando `PASS` revelará a senha.
+
+**Exemplo de Análise no Wireshark:**
+
+Ao aplicar o filtro `tcp.port == 21`, o pentester pode observar uma sequência de pacotes como:
+
+* **Cliente para Servidor:** `USER <nome_de_usuario>`
+* **Servidor para Cliente:** `331 Please specify the password.`
+* **Cliente para Servidor:** `PASS <senha>`
+* **Servidor para Cliente:** `230 Login successful.`
+
+Neste ponto, o pentester teria capturado com sucesso as credenciais de acesso FTP do usuário.
+
+**Considerações Adicionais:**
+
+* É importante lembrar que este exemplo assume que a comunicação FTP não está utilizando nenhuma forma de criptografia (como FTPS). Se o FTP estiver utilizando TLS/SSL, a captura e análise das credenciais se tornam muito mais complexas, exigindo técnicas adicionais (e nem sempre sendo possível).
+* O uso de ferramentas como Ettercap e Wireshark requer conhecimento técnico e prático. A interpretação dos dados capturados exige compreensão dos protocolos de rede.
+* Novamente, reforço a importância de realizar esses testes apenas em ambientes autorizados e com o consentimento das partes envolvidas. O uso dessas técnicas para atividades maliciosas é ilegal e antiético.
+
+Este exemplo demonstra como o Ettercap, em conjunto com ferramentas de reconhecimento de rede como o Nmap e analisadores de protocolos como o Wireshark, pode ser utilizado por um pentester para simular ataques e identificar vulnerabilidades em redes e sistemas. A capacidade de interceptar e analisar o tráfego de rede é crucial para avaliar a segurança de uma infraestrutura.
+
+
