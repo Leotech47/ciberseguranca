@@ -152,4 +152,36 @@ Neste ponto, o pentester teria capturado com sucesso as credenciais de acesso FT
 
 Este exemplo demonstra como o Ettercap, em conjunto com ferramentas de reconhecimento de rede como o Nmap e analisadores de protocolos como o Wireshark, pode ser utilizado por um pentester para simular ataques e identificar vulnerabilidades em redes e sistemas. A capacidade de interceptar e analisar o tráfego de rede é crucial para avaliar a segurança de uma infraestrutura.
 
+---
+
+Diversas aplicações, historicamente ou por padrão em configurações não seguras, não utilizam criptografia na transmissão de dados entre hosts. Isso significa que os dados podem ser interceptados e lidos por terceiros durante a transmissão. Alguns exemplos comuns incluem:
+
+* **HTTP (Hypertext Transfer Protocol):** A versão padrão do protocolo usado para navegação na web envia dados (incluindo informações de formulários, cookies, etc.) em texto plano. Embora o HTTPS (HTTP Secure) seja amplamente utilizado hoje em dia, ainda existem sites e aplicações que utilizam apenas HTTP.
+
+* **SMTP (Simple Mail Transfer Protocol):** O protocolo padrão para envio de e-mails tradicionalmente não utiliza criptografia. As mensagens de e-mail são transmitidas em texto plano entre servidores de e-mail, a menos que mecanismos de segurança como TLS/SSL sejam explicitamente configurados.
+
+* **POP3 (Post Office Protocol version 3):** Protocolo usado para receber e-mails de um servidor. Na sua forma padrão, as credenciais de login e o conteúdo dos e-mails são transmitidos sem criptografia.
+
+* **IMAP (Internet Message Access Protocol):** Outro protocolo para acesso a e-mails, que também transmite dados (incluindo credenciais e conteúdo) em texto plano por padrão.
+
+* **FTP (File Transfer Protocol):** O protocolo padrão para transferência de arquivos entre hosts envia tanto as credenciais de login quanto o conteúdo dos arquivos em texto plano.
+
+* **Telnet:** Um protocolo de terminal remoto que transmite todos os dados, incluindo comandos e respostas, em texto plano. É considerado inseguro e raramente utilizado em ambientes modernos.
+
+* **SNMP (Simple Network Management Protocol) versões 1 e 2:** As versões mais antigas deste protocolo usado para gerenciamento de dispositivos de rede transmitiam informações da comunidade (semelhante a senhas) em texto plano.
+
+* **Alguns protocolos de banco de dados:** Em algumas configurações não seguras, a comunicação entre um cliente de banco de dados e o servidor pode ocorrer sem criptografia, expondo as consultas e os dados.
+
+É importante notar que muitas dessas aplicações possuem versões seguras que utilizam criptografia para proteger a transmissão de dados. Por exemplo:
+
+* **HTTPS** é a versão segura do HTTP, utilizando criptografia TLS/SSL.
+* **SMTPS**, **POP3S** e **IMAPS** são versões seguras dos protocolos de e-mail que utilizam TLS/SSL.
+* **FTPS** e **SFTP** são versões seguras do FTP.
+* **SSH** é um protocolo seguro que substituiu o Telnet.
+* **SNMPv3** oferece recursos de segurança aprimorados, incluindo criptografia.
+
+Ao projetar e implementar sistemas, é fundamental priorizar o uso de protocolos e configurações que garantam a criptografia dos dados em trânsito para proteger a confidencialidade e a integridade das informações.
+
+---
+
 
